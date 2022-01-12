@@ -30,7 +30,7 @@ namespace Meine_Transport_App
         {
             HideVerbindungsliste();
             HideAbfahrtstafel();
-            UhrzeitTextBox.Text = Convert.ToString(DateTime.Now.Hour) + ":" + Convert.ToString(DateTime.Now.Minute);
+            UhrzeitTextBox.Text = DateTime.Now.ToString("HH:mm");
         }
         private void EingabeVon_DropDown(object sender, EventArgs e)
         {
