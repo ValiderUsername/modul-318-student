@@ -15,6 +15,8 @@ namespace Meine_Transport_App
         {
             Abfahrtstafel.Show();
             AbfahrtsplanLabel.Show();
+            VerbindungenGrid.Hide();
+            VerbindungslisteLabel.Hide();
         }
         public void HideVerbindungsliste()
         {
@@ -25,6 +27,8 @@ namespace Meine_Transport_App
         {
             VerbindungenGrid.Show();
             VerbindungslisteLabel.Show();
+            Abfahrtstafel.Hide();
+            AbfahrtsplanLabel.Hide();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
