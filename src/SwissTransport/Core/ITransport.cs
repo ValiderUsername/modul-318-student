@@ -2,7 +2,7 @@
 {
     using System.Threading.Tasks;
     using SwissTransport.Models;
-
+    using System;
     public interface ITransport
     {
         Task<Stations> GetStationsAsync(string query);
@@ -16,5 +16,9 @@
         Task<Connections> GetConnectionsAsync(string fromStation, string toStation);
 
         Connections GetConnections(string fromStation, string toStation);
+
+        Connections GetConnectionsWithTime(string fromStation, string toStation, DateTime dateTime);
+
+        Task<Connections> GetConnectionsWithTimeAsync(string fromStation, string toStation, DateTime dateTime);
     }
 }
